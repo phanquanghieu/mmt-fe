@@ -132,12 +132,6 @@ const AddForm = () => {
       )}
 
       <div className="set-meta">
-        <div className="header-edit">
-          <h3>Add this set card!</h3>
-          <button className="finish" onClick={handleSave}>
-            {!createSetCardData.loading ? "Save!" : "Saving..."}
-          </button>
-        </div>
         <div className="container">
           <div className="set-meta-wrapper">
             <div className="set-meta-form">
@@ -164,14 +158,14 @@ const AddForm = () => {
               />
               <br />
 
-              <input
+              {/* <input
                 type="checkbox"
                 id="set-public"
                 checked={share}
                 value={1}
                 onChange={(e) => setShare(e.target.checked)}
               />
-              <label htmlFor="set-public">Public?</label>
+              <label htmlFor="set-public">Public?</label> */}
             </div>
 
             <div>
@@ -234,7 +228,7 @@ const AddForm = () => {
                 <input
                   className="border-input"
                   type="text"
-                  placeholder="Enter term"
+                  placeholder="Enter Term"
                   value={cardKeyword}
                   onChange={(e) => setCardKeyword(e.target.value)}
                 />

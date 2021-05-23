@@ -14,7 +14,7 @@ const Setting = () => {
     <>
     <Container className="my-5">
       <h3 className="display-4">
-        Settings for <span className="code">@{authUser.user.username}</span>
+        Settings for <span className="code">{authUser.user.username}</span>
       </h3>
 
       <Row className="m-5 ">
@@ -47,7 +47,7 @@ const Setting = () => {
         </Col>
       </Row>
 
-      <Row className="m-5 ">
+      {/* <Row className="m-5 ">
         <Col xs={3} className="text-center">
           <i class="material-icons large_icon p-3">settings_brightness</i>
           <p>Night Mode</p>
@@ -60,7 +60,7 @@ const Setting = () => {
             </Button>
           </div>
         </Col>
-      </Row>
+      </Row> */}
 
       <Row className="m-5 ">
         <Col xs={3} className="text-center">

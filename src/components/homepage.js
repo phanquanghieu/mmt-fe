@@ -14,32 +14,17 @@ const HomePage = () => {
       <div id="introduce-body">
         <div className="left-body">
           <div className="title">
-            <h2> Vươn tới</h2>
-            <h2> phiên bản tốt hơn</h2>
-            <h2> của chính bạn</h2>
+            <h2> SmartCard</h2>
           </div>
-
-          <div>Thông thạo bài học, bớt nhạc thêm vui</div>
-
+          <div>Learn new words with your friends</div>
           <div>
             <button className="code" onClick={onClick}>
-              Bắt đầu nào
+              Start Now
             </button>
-          </div>
-
-          <div>
-            <span>Mình là người dạy | Mình là phụ huynh</span>
           </div>
         </div>
         <div className="right-body">
-          <img src="/homepage.png" alt="img" width="100%" />
-          <div className="content">
-            <h5>FlashMind dành cho ai?</h5>
-            <ul>
-              <li>Cho những mọt sách ham học nhưng hay quên,</li>
-              <li>Cho những người bạn nhiều khi mải ngủ quên học</li>
-            </ul>
-          </div>
+          <img src="/homepage.jpg" alt="img" width="100%" height="100%"/>
         </div>
       </div>
     </>

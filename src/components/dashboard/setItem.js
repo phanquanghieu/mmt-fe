@@ -51,7 +51,7 @@ const SetItem = (props) => {
     <>
       {/* <ConfirmModal show={confirmModal} onHide={handleDelete} /> */}
 
-      <div className="set-item">
+      <div className="set-item" onClick={moveToDetail} style={{cursor:"pointer"}}>
         <div className="avatar">
           <img
             src={process.env.REACT_APP_API_DOMAIN + "/" + avatar}
@@ -61,7 +61,7 @@ const SetItem = (props) => {
 
         <div className="set-content">
           <h4>
-            <span onClick={moveToDetail} className="link">
+            <span  className="link">
               {title}
             </span>
           </h4>

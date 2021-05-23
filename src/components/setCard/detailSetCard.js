@@ -108,7 +108,7 @@ const DetailSet = () => {
         <Row>
           <Col sm={2}>
             <div className="set-detail-info ml-5 mt-3 d-grid ">
-              <Link to={`/setCard/${slug}`} className="p-2 io" block>
+              {/* <Link to={`/setCard/${slug}`} className="p-2 io" block>
                 <i class="fa fa-clone icon"></i>
                 Flashcard
               </Link>
@@ -123,8 +123,7 @@ const DetailSet = () => {
               </Link>
               <Link to="#" className="p-2 io">
                 <i class="fa fa-file-text icon"></i> Test
-              </Link>
-              {/* <FacebookShareButton url={slug}></FacebookShareButton> */}
+              </Link> */}
             </div>
           </Col>
           <Col sm={10}>
@@ -230,8 +229,7 @@ const DetailSet = () => {
           {result.detail.map((item, idx) => (
             <QuestionItem keyword={item.card_title} desc={item.card_desc} />
           ))}
-          <h3 className="mt-5">Flashcard có liên quan</h3>
-          <div className="item">
+          {/* <div className="item">
             <span className="stt">1</span>
             <span className="name">Name</span>
             <span className="descptn">description</span>
@@ -251,7 +249,7 @@ const DetailSet = () => {
             <span className="descptn">description</span>
             <span className="thumb">Ảnh đại diện</span>
             <span className="more-dots">...</span>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />

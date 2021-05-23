@@ -21,9 +21,6 @@ code {
   display: flex;
 }
 
-#introduce-body > div {
-  width: 50%;
-}
 .left-body {
   color: #fff;
   background-color: #ac4659;
@@ -31,10 +28,12 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40%;
 }
 .right-body {
   background-color: #da627d;
   color: #fff;
+  width: 60%;
 }
 
 #introduce-body .left-body button {
@@ -235,7 +234,6 @@ code {
     padding-top: 25px;
   }
   .founder {
-    text-align: center;
   }
 }
 .material-icons {

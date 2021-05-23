@@ -163,12 +163,12 @@ const EditForm = () => {
           />
         )}
         <div className="set-meta">
-          <div className="header-edit">
+          {/* <div className="header-edit">
             <h3>Update set card!</h3>
             <button className="finish" onClick={handleUpdate}>
               {!postingStatus ? "Update!" : "Updating..."}
             </button>
-          </div>
+          </div> */}
           <div className="container">
             <div className="set-meta-wrapper">
               <div className="set-meta-form">
@@ -195,14 +195,14 @@ const EditForm = () => {
                   />
                   <br />
 
-                  <input
+                  {/* <input
                     type="checkbox"
                     id="set-public"
                     checked={share}
                     value={1}
                     onChange={(e) => setShare(e.target.checked)}
                   />
-                  <label htmlFor="set-public">Public ?</label>
+                  <label htmlFor="set-public">Public ?</label> */}
                   <button className="btn-update" onClick={handleUpdate}>
                     {!postingStatus ? "Update!" : "Updating..."}
                   </button>

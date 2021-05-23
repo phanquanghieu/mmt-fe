@@ -37,16 +37,16 @@ const Avatar = ({ size, src }) => {
         target="Popover1"
         toggle={() => setShow(!setShow)}
       >
-        <PopoverHeader>@{authUser.user.username}</PopoverHeader>
+        <PopoverHeader>{authUser.user.username}</PopoverHeader>
         <PopoverBody className="d-flex flex-column p-0 " onClick={onClosePop}>
-          <Link to="/setting" className="p-2 io" block>
+          {/* <Link to="/setting" className="p-2 io" block>
             <i class="material-icons icon">settings</i>
             Setting
-          </Link>
+          </Link> */}
           <Link to="/profile" className="p-2 io">
             <i class="material-icons icon">person</i> Profile
           </Link>
-          <a
+          {/* <a
             href="https://www.facebook.com/groups/441154729911930/"
             className="p-2 io"
           >
@@ -54,7 +54,7 @@ const Avatar = ({ size, src }) => {
           </a>
           <Link to="/profile" className="p-2 io">
             <i class="material-icons icon">settings_brightness</i> Night Mode
-          </Link>
+          </Link> */}
           <Link className=" p-2 io" onClick={onClickLogOut}>
             <i class="material-icons icon">power_settings_new</i>
             Logout

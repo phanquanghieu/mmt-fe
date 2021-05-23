@@ -23,7 +23,6 @@ function App() {
     if (!authUser) {
       const jwt = localStorage.getItem("jwt");
       const ss = localStorage.getItem("session");
-      debugger;
       if (jwt !== null && jwt) {
         console.log("here" + jwt + "1");
         fetchProfile(jwt).then((user) => setAuthUser(user));

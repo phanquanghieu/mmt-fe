@@ -2,18 +2,19 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="aboutUse">
-        <h4>FLASHMIND</h4>
+    <div className="footer" style={{display:"flex", justifyContent: "space-around"}}>
+      {/* <div className="aboutUse">
+        <h4>Smart Card</h4>
         <p>Learn effectively using your own custom flashcards</p>
-      </div>
+      </div> */}
       <div className="founder">
         <h4>Our Team</h4>
         <ul>
-          <li>Đào Văn Tâm</li>
-          <li>Vũ Quốc Đạt</li>
-          <li>Lưu Thị Hoài Thu</li>
-          <li>Võ Hằng Mai Anh</li>
+          <li>Phan Quang Hiếu</li>
+          <li>Lê Dương Hưng</li>
+          <li>Vũ Ngọc Cương</li>
+          <li>Nguyễn Chí Dũng</li>
+          <li>Phùng Huy Hùng</li>
         </ul>
       </div>
       <div className="contact">
@@ -21,11 +22,11 @@ const Footer = () => {
         <ul>
           <li>
             <i class="material-icons">edit_location</i>
-            Số 22 Thành Công - Ba Đình - Hà Nội
+            Hà Đông - Hà Nội
           </li>
           <li>
             <i class="material-icons">phone_iphone</i>
-            Phone: 0909767654
+            Phone: 0977275069
           </li>
           <li>
             <i class="material-icons">email</i>

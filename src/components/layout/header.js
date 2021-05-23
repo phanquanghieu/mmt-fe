@@ -65,9 +65,9 @@ const Header = () => {
     <>
       <Navbar sticky="top" className="header">
         <Navbar.Brand onClick={moveToDashboard}>
-          <b className="m-4 pointer">
-            <img src={logo} alt="" className="logo" />
-          </b>
+          <span className="m-4 pointer" style={{ color: "white", fontSize: "40px", padding: "0px 0px 0px 50px", fontWeight: "bold" }}>
+            SmartCard
+          </span>
         </Navbar.Brand>
         <Form inline>
           {search && (
@@ -96,9 +96,9 @@ const Header = () => {
                 <i
                   class="fa fa-plus"
                   style={style}
-                  // onClick={() =>
-                  //   (document.location.pathname = "/flashcard/new")
-                  // }
+                // onClick={() =>
+                //   (document.location.pathname = "/flashcard/new")
+                // }
                 ></i>
               </Link>
             </>

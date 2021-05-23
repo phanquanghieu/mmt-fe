@@ -43,7 +43,7 @@ const Profile = () => {
   return (
     <>
       <Container className="my-5">
-        <h3 className="display-4">
+        <h3>
           Profile: <span className="code">{authUser.user.username}</span>
         </h3>
         <Form onSubmit={formik.handleSubmit}>

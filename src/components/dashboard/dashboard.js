@@ -50,9 +50,8 @@ const Dashboard = () => {
     );
   } else {
     return (
-      <div className="mx-5">
-        <div className="dashboard-wrapper">
-          <div className="sidebar">
+      <div className="dashboard-wrapper">
+        {/* <div className="sidebar">
             <div className="sidebar-item">FlashCard</div>
             <div className="sidebar-item">Multiple Choice</div>
             <div className="sidebar-item folder-item">
@@ -71,9 +70,9 @@ const Dashboard = () => {
                 <i class="fa fa-instagram" style={style}></i>
               </p>
             </div>
-          </div>
-          <div className="mainbar">
-            <div className="filterBar">
+          </div> */}
+        <div className="mainbar">
+          {/* <div className="filterBar">
               <form action="#">
                 <input type="radio" id="finish" value="finish" name="status" />
                 <label htmlFor="finish">Finish</label>
@@ -92,22 +91,21 @@ const Dashboard = () => {
                 <input type="radio" id="all" value="all" name="status" />
                 <label htmlFor="all">All</label>
               </form>
-            </div>
+            </div> */}
 
-            <div className="mainbar-content">
-              <div className="card-section">
-                <div className="section-title">
-                  <h2>Your own flashcard</h2>
-                  <Link to="/flashcard/new">
-                    <button>New +</button>
-                  </Link>
-                </div>
-                <div className="section-body">
-                  {resultArr &&
-                    resultArr.map((item) => (
-                      <SetItem key={item.id} item={item} />
-                    ))}
-                </div>
+          <div className="mainbar-content">
+            <div className="card-section">
+              <div className="section-title">
+                <h2>Your own flashcard</h2>
+                <Link to="/flashcard/new">
+                  <button>New +</button>
+                </Link>
+              </div>
+              <div className="section-body">
+                {resultArr &&
+                  resultArr.map((item) => (
+                    <SetItem key={item.id} item={item} />
+                  ))}
               </div>
             </div>
           </div>

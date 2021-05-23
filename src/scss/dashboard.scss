@@ -3,6 +3,7 @@
   justify-content: center;
   display: flex;
   height: calc(100vh - 86px);
+  width: 100%;
 }
 .sidebar {
   width: 15%;
@@ -29,7 +30,6 @@
 }
 .mainbar {
   width: 70%;
-  padding-left: 30px;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@
   position: absolute;
   right: 0;
   top: 50%;
-  font-size: 14px;
+  font-size: 18px;
   border: none;
   padding: 3px 15px;
   border-radius: 15px;
